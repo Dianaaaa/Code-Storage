@@ -1,0 +1,102 @@
+/*
+ * BUG#0
+ * description: 
+     miss semicolon
+ * location: 
+ *   int a = 10  (line 18)
+ * evidence: 
+ *   test.c:19: error: two or more data types in declaration specifiers
+ */
+
+BUG#1
+description: except ";", identifier or '(' before 'struct'
+
+location: 52
+
+evidence: the command of enum lacks a ";".
+
+
+
+BUG#2
+description: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘static’
+
+location: 58
+
+evidence: There is no ';' at the end of 'typedef'.
+
+
+
+BUG#3
+description: unknown type name ‘record’
+
+location: 114
+
+evidence: 'record' has been changed to 'record_t' by 'typedef'.
+
+
+
+BUG#4
+description: implicit declaration of function ‘sprintf’ [-Wimplicit-function-declaration]
+
+location: 122
+
+evidence: stdio.h hasn't been included.
+
+
+
+BUG#5
+description: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+
+location: 189
+
+evidence: There is no '{' after if statement.
+
+
+
+BUG#6
+description: unable to open file
+
+location: 188
+
+evidence: change the mode of fileopen from 'r' to 'w'.
+
+
+
+
+BUG#7
+description: Segmentation fault
+
+location: 127
+
+evidence: in for statement, "i++" should be "j++".
+
+
+
+
+BUG#8
+description: Segmentation fault
+
+location: 182
+
+evidence: malloc(buf_size);
+
+
+
+
+BUG#9
+description:Segmentation fault
+
+location: 148
+
+evidence: cnt < buf_nrec.
+
+
+
+
+BUG#10
+description:
+
+location:
+
+evidence:
+
